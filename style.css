@@ -1,0 +1,13 @@
+h1 {
+    font-family: "Lucida Handwriting", Times, serif;
+    letter-spacing: 0.3em;
+  }
+
+*body {
+  background-image: url("https://th.bing.com/th/id/OIP.Seyvf9kgHzHFjenK8HnOUwHaEK?pid=ImgDet");
+  width: 10%;
+  height: 10%;
+  background-size: contain;
+  background-position: inherit;
+}
+
