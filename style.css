@@ -1,13 +1,45 @@
-h1 {
-    font-family: "Lucida Handwriting", Times, serif;
-    letter-spacing: 0.3em;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-*body {
-  background-image: url("https://th.bing.com/th/id/OIP.Seyvf9kgHzHFjenK8HnOUwHaEK?pid=ImgDet");
-  width: 10%;
-  height: 10%;
-  background-size: contain;
-  background-position: inherit;
+* {
+  color: coral;
+  font-size: 20px;
+  font-weight: 800;
 }
 
+h1 {
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+
+    font-family: "Lucida Handwriting", Times, serif;
+    letter-spacing: 0.3em;
+
+    border-color: blue;
+    border-radius: 20px;
+    border-style: groove;
+  }
+
+p {
+  background-color: rgba(255, 228, 196, 0.200);
+  align-items: center;
+  text-align: center;
+  padding: 1px 5px;
+
+  border-color: rgba(0, 0, 0, 0.534);
+  border-style: groove;
+  border: 10rem;
+  border-radius: 1rem;
+
+  font-size: 25px;
+  color: rgba(169, 169, 169, 0.986);
+  font-weight: 700;
+  font-family: 'Lobster';
+}
+
+button {
+  border-style: none;
+}
+
+button p {
+  font-size: 20px;
+}
