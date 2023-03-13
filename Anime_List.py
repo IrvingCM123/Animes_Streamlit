@@ -4,9 +4,9 @@ import pandas as pd
 import os
 import numpy as np
 from PIL import Image
-#import matplotlib
-#matplotlib.use('TkAgg')
-#plt.rcParams.update({'figure.figsize': (7, 5), 'figure.dpi': 100})
+import matplotlib
+matplotlib.use('TkAgg')
+plt.rcParams.update({'figure.figsize': (7, 5), 'figure.dpi': 100})
 
 image = Image.open('Yohane.jpeg')
 doc = 'anime.csv'
@@ -112,14 +112,13 @@ save_data_for_Barras_name = np.array(
     save_data_for_Barras_name)
 
 if st.sidebar.checkbox('Mostrar grafica de barras'):
-    dataframe = pd.DataFrame(
-        save_data_for_Barras_rating, save_data_for_Barras_name)
-    axis = dataframe.plot.barh(rot=0)
-    plt.xlabel("Rating")
-    plt.ylabel("Names")
-    plt.title("Animes")
+    dataframe, axis = plt.subplots()
+    axis.bar(save_data_for_Barras_name, save_data_for_Barras_rating, color = 'blue')
+    axis.set_xlabel('Nombre')
+    axis.set_ylabel('Rating')
+    axis.set_title('Rating de animes')
 
-    st.bar_chart(plt.show())
+    st.pyplot(dataframe)
 
 ##############
 save_data_for_Scatter = pd.DataFrame(save_data)
@@ -132,14 +131,14 @@ save_data_for_Barras_members = save_data_for_Barras['members'].astype(
     float)
 
 if st.sidebar.checkbox('Mostrar grafica de dispersión'):
-    plt.scatter(save_data_for_Barras_rating,
+    dataframe, axis = plt.subplots()
+    axis.scatter(save_data_for_Barras_rating,
                 save_data_for_Barras_members,
                 color='blue',
                 alpha=0.4,
                 cmap='viridis')
-    plt.colorbar()
 
-    st.bar_chart(plt.show())
+    st.pyplot(dataframe)
 
 
 if botonTitulo:
