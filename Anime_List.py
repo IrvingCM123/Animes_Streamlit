@@ -4,9 +4,6 @@ import pandas as pd
 import os
 import numpy as np
 from PIL import Image
-import matplotlib
-matplotlib.use('TkAgg')
-plt.rcParams.update({'figure.figsize': (7, 5), 'figure.dpi': 100})
 
 image = Image.open('Yohane.jpeg')
 doc = 'anime.csv'
