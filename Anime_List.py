@@ -139,11 +139,6 @@ if botonTitulo:
     rows = filterbyname.shape[0]
     st.dataframe(filterbyname)
 
-if botonGenero:
-    filterbygenero = load_data_bygenere(genero.upper())
-    rows = filterbygenero.shape[0]
-    st.dataframe(filterbygenero)
-
 if BotonGenere:
     filtered_data_bygenere = load_data_bygenere(Genere)
     rows = filtered_data_bygenere.shape[0]
