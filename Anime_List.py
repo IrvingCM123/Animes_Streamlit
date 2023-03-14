@@ -61,10 +61,6 @@ buscadorTitulo = st.sidebar.write("Buscar Anime especifico: ")
 buscador = st.sidebar.text_input("Nombre")
 botonTitulo = st.sidebar.button("Buscar")
 
-buscadorGenero = st.sidebar.write("Buscar categoria especifica: ")
-genero = st.sidebar.text_input("Genero")
-botonGenero = st.sidebar.button("Buscar categoria")
-
 Genere = st.sidebar.selectbox("Selecciona un genero",
                               options=data['genre'].unique())
 BotonGenere = st.sidebar.button("Buscar por genero")
