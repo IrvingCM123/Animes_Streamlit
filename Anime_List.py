@@ -88,6 +88,7 @@ if st.sidebar.checkbox('Mostrar histograma'):
                                   save_data_forHistrograma_ep.max()),
                            weights=None,
                            density=False)[0]
+    st.write("Histograma acerca de los episodios de los animes registrados")
     st.bar_chart(mostrar)
 
 # Grafica de barras ##############3
@@ -110,7 +111,8 @@ if st.sidebar.checkbox('Mostrar grafica de barras'):
     axis.set_xlabel('Nombre')
     axis.set_ylabel('Rating')
     axis.set_title('Rating de animes')
-
+             
+    st.write("Grafica de barras, acerca de los animes y su rating de popularidad")
     st.pyplot(dataframe)
 
 ##############
@@ -131,6 +133,7 @@ if st.sidebar.checkbox('Mostrar grafica de dispersión'):
                 alpha=0.4,
                 cmap='viridis')
 
+    st.write("Grafica de dispersión acerca de la cantidad de seguidores de los animes en comparación de su rating")
     st.pyplot(dataframe)
 
 
