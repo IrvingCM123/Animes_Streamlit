@@ -49,7 +49,7 @@ save_data = pd.read_csv(doc, delimiter=',')
 save_data = load_data(50)
 
 # --- LOGO ---#
-st.sidebar.image("Credencial.jpg")
+st.sidebar.image("Yohane.jpeg")
 st.sidebar.write("Irving Rafael Conde Marin - S20006735")
 st.sidebar.markdown("##")
 
